@@ -1,0 +1,6 @@
+##set(XLN_BUILD_glog true)
+if(MSVC)
+xln_add_dependency(glog ${ThirdPartyRoot}/glog ${ThirdPartyRoot}/build . glog glogd)
+else()
+xln_add_dependency(glog ${ThirdPartyRoot}/glog ${ThirdPartyRoot}/build . glog glog)
+endif()

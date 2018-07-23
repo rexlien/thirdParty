@@ -1,0 +1,41 @@
+[submodule "wangle"]
+	path = wangle
+url=https://github.com/rexlien/wangle.git
+	branch = xln
+[submodule "folly"]
+	path = folly
+url=https://github.com/rexlien/folly.git
+	branch = xln
+[submodule "fbthrift"]
+	path = fbthrift
+url=https://github.com/rexlien/fbthrift.git
+	branch = xln
+[submodule "gtest"]
+	path = gtest
+	url = https://github.com/rexlien/googletest.git
+[submodule "nlohmann"]
+	path = nlohmann
+	url = https://github.com/nlohmann/json.git
+	branch = master
+[submodule "flatbuffers"]
+	path = flatbuffers
+	url = https://github.com/google/flatbuffers.git
+[submodule "squangle"]
+	path = squangle
+url=https://github.com/rexlien/squangle.git
+[submodule "leveldb"]
+	path = leveldb
+	url = https://github.com/google/leveldb.git
+[submodule "myrocks"]
+	path = myrocks
+url=https://github.com/rexlien/mysql-5.6.git
+[submodule "re2"]
+	path = re2
+	url = https://github.com/google/re2.git
+[submodule "beast"]
+	path = beast
+	url = https://github.com/boostorg/beast.git
+	branch = master
+[submodule "rocksdb"]
+	path = rocksdb
+	url = https://github.com/facebook/rocksdb.git

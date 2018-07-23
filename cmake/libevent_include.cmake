@@ -1,0 +1,10 @@
+if(MSVC)
+    ##set(XLN_BUILD_libevent true)
+    ##if(MSVC)
+    set(EVENT__DISABLE_BENCHMARK ON)
+    set(EVENT__DISABLE_TESTS ON)
+    set(EVENT__DISABLE_REGRESS ON)
+    set(EVENT__DISABLE_SAMPLES ON)
+    xln_add_dependency(libevent ${ThirdPartyRoot}/libevent ${ThirdPartyRoot}/build lib event event)
+    
+endif()
