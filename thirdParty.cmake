@@ -366,7 +366,6 @@ add_library(pthread SHARED IMPORTED GLOBAL)
 set_property(TARGET pthread APPEND PROPERTY IMPORTED_CONFIGURATIONS Debug)
 set_target_properties(pthread PROPERTIES
     IMPORTED_LOCATION ${ThirdPartyRoot}/build/msvc/pthread/dll/x64/pthreadVC2.dll
-    ##IMPORTED_LOCATION_RELEASE ${ThirdPartyRoot}/build/msvc/pthread/lib/x64/pthreadVC2.lib
     IMPORTED_IMPLIB ${ThirdPartyRoot}/build/msvc/pthread/lib/x64/pthreadVC2.lib
 )
 
@@ -386,7 +385,9 @@ endif()
 set(Boost_USE_STATIC_LIBS ON) 
 set(Boost_USE_MULTITHREADED ON)  
 set(Boost_DEBUG TRUE)
-set(BOOST_LIBRARYDIR ${ThirdPartyRoot}/boost/msvc/boost_1_64_0/lib/x64)
+set(BOOST_LIBRARYDIR ${ThirdPartyRoot}/boost/msvc/boost_1_67_0/x64/lib)
+set(BOOST_ROOT ${ThirdPartyRoot}/boost/msvc/boost_1_67_0)
+set(BOOST_INCLUDEDIR ${ThirdPartyRoot}/boost/boost_1_67_0)
 
 add_subdirectory(${ThirdPartyRoot}/double-conversion)
 set(DOUBLE_CONVERSION_INCLUDE_DIR ${ThirdPartyRoot}/double-conversion/double-conversion)
@@ -420,7 +421,7 @@ set_target_properties(OpenSSL PROPERTIES
 set(LIBGFLAGS_INCLUDE_DIR ${ThirdPartyRoot}/gflags/gflags/src)
 set(LIBGFLAGS_LIBRARY gflags_nothreads_static)
 
-link_directories(${ThirdPartyRoot}/boost/msvc/boost_1_64_0/lib/x64)
+link_directories(${ThirdPartyRoot}/boost/msvc/boost_1_67_0/lib/x64)
 
 
 
