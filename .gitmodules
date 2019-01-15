@@ -42,3 +42,6 @@ url=https://github.com/rexlien/mysql-5.6.git
 [submodule "zstd"]
 	path = zstd
 	url = https://github.com/facebook/zstd.git
+[submodule "grpc"]
+	path = grpc
+	url = https://github.com/rexlien/grpc.git
