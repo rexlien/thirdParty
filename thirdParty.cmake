@@ -7,11 +7,10 @@ endif()
 include(${ThirdPartyRoot}/thirdParty_include.cmake)
 include(${ThirdPartyRoot}/../cmake/util.cmake)
 
-include(${ThirdPartyRoot}/cmake/gtest_include.cmake)
-include(${ThirdPartyRoot}/cmake/glog_include.cmake)
-include(${ThirdPartyRoot}/cmake/gflags_include.cmake)
-include(${ThirdPartyRoot}/cmake/protobuf_include.cmake)
+
+
 include(${ThirdPartyRoot}/cmake/libevent_include.cmake)
+
 
 if(CMAKE_HOST_APPLE)
 set(PYTHON_EXECUTABLE /usr/bin/python)
@@ -428,9 +427,18 @@ link_directories(${ThirdPartyRoot}/boost/msvc/boost_1_67_0/lib/x64)
 
 endif()
 
+include(${ThirdPartyRoot}/cmake/gtest_include.cmake)
+include(${ThirdPartyRoot}/cmake/protobuf_include.cmake)
+include(${ThirdPartyRoot}/cmake/grpc_include.cmake)
+
+include(${ThirdPartyRoot}/cmake/glog_include.cmake)
+include(${ThirdPartyRoot}/cmake/gflags_include.cmake)
+
 include(${ThirdPartyRoot}/cmake/folly_include.cmake)
 include(${ThirdPartyRoot}/cmake/wangle_include.cmake)
 include(${ThirdPartyRoot}/cmake/re2_include.cmake)
+
+
 
 if(XLN_BUILD_SERVER)
 include(${ThirdPartyRoot}/cmake/fbthrift_include.cmake)

@@ -1,4 +1,4 @@
-#set(XLN_BUILD_gflags_nothreads_static true)
+set(XLN_BUILD_gflags_nothreads_static true)
 if(MSVC)
 xln_add_dependency(gflags_nothreads_static ${ThirdPartyRoot}/gflags/gflags ${ThirdPartyRoot}/build . gflags_nothreads_static gflags_nothreads_staticd)
 ##target_link_libraries(gflags_nothreads_static PUBLIC "shlwapi.lib")

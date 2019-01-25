@@ -14,7 +14,7 @@ include_directories(${ThirdPartyRoot}/wangle)
 include_directories(${ThirdPartyRoot}/nlohmann/include)
 
 
-set(Protobuf_INCLUDE_DIR ${ThirdPartyRoot}/protobuf-3.4.x/src)
+set(Protobuf_INCLUDE_DIR ${ThirdPartyRoot}/protobuf/src)
 include_directories(${Protobuf_INCLUDE_DIR})
 
 if(IOS)
